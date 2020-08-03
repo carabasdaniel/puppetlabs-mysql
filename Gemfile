@@ -72,4 +72,6 @@ extra_gemfiles.each do |gemfile|
     eval(File.read(gemfile), binding)
   end
 end
+
+gem "puppet_litmus", git: 'https://github.com/puppetlabs/puppet_litmus.git', branch: 'master'
 # vim: syntax=ruby
